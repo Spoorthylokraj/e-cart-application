@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spoorthy's E-Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🛒 Spoorthy's E-Cart Application</h1>
+
+  <div class="container">
+    <div class="product">
+      <img src="image/shirt.jpg" alt="Shirt" />
+      <h3>Product 1</h3>
+      <p>Price: ₹100</p>
+      <button onclick="addToCart('Product 1', 100)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="image/watch.jpg" alt="Watch" />
+      <h3>Product 2</h3>
+      <p>Price: ₹150</p>
+      <button onclick="addToCart('Product 2', 150)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="image/shoes.jpg" alt="Shoes" />
+      <h3>Product 3</h3>
+      <p>Price: ₹200</p>
+      <button onclick="addToCart('Product 3', 200)">Add to Cart</button>
+    </div>
+  </div>
+
+  <hr />
+  <h2>🧺 Your Cart</h2>
+  <ul id="cartList"></ul>
+  <p id="emptyMsg">Your cart is empty.</p>
+  <p><strong>Total: ₹<span id="total">0</span></strong></p>
+  <button onclick="clearCart()">Clear Cart</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
